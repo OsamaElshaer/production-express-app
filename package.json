@@ -1,0 +1,20 @@
+{
+  "name": "user-registration",
+  "version": "1.0.0",
+  "description": "provides the main functions you'd expect from a registration app, such as, login, signup, reset password etc.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "osamaElshaer",
+  "license": "MIT",
+  "dependencies": {
+    "content-type": "^1.0.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-esapi": "^0.0.1",
+    "raw-body": "^2.5.1"
+  }
+}
