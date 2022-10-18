@@ -11,11 +11,13 @@ const csrf = require("csurf");
 const hpp = require("hpp");
 const getRawBody = require("raw-body");
 const cookieParser = require("cookie-parser");
+const morgan = require("morgan");
 
 //node core modules
 const path = require("path");
-//require from module
 
+//require from module
+const { logger, getLogger } = require("./services/logger");
 // config env & variables
 require("dotenv").config();
 
@@ -29,7 +31,6 @@ app.set("view engine", "ejs");
 
 //request parser
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //protect against HTTP Parameter Pollution attacks
@@ -37,17 +38,19 @@ app.use(hpp());
 
 // limit the size request
 app.use(function (req, res, next) {
-  getRawBody(req)
-    .then(function (buf) {
-      res.statusCode = 200;
-      if (buf.length > 1e6) {
-        return res.status(422).end(buf.length + " bytes submitted");
-      }
+  getRawBody(
+    req,
+    {
+      length: req.headers["content-length"],
+      limit: "1mb",
+      encoding: true,
+    },
+    function (err, string) {
+      if (err) return next(err);
+      req.text = string;
       next();
-    })
-    .catch(function (err) {
-      res.status(500).end(err.message);
-    });
+    }
+  );
 });
 
 //limit requests rate
@@ -69,13 +72,17 @@ app.use(cors(corsOptions));
 //Escape html
 app.use(ESAPI.middleware());
 
-//csrf
-const csrfProtection = csrf({ cookie: true });
-app.use(csrfProtection);
+//morgan
+let loggerstream = {
+  write: function (message) {
+    logger.info(message);
+  }
+};
+app.use(morgan("tiny", { stream: loggerstream }));
 
-app.use((req, res, next) => {
-  res.locals.csrfToken = req.csrfToken();
-  next();
+//routes
+app.get("/",(req, res, next) => {
+  res.end();
 });
 
 // listening on port

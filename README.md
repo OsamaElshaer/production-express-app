@@ -22,6 +22,7 @@ application build by Node.js cause is a great choice for real-time tracking appl
 - [Node-esapi](https://www.npmjs.com/package/node-esapi)
 - [Raw-body](https://www.npmjs.com/package/raw-body)
 - [Csurf](https://www.npmjs.com/package/csurf)
+- [Winston](https://www.npmjs.com/package/Winston)
 
 <!-- GETTING STARTED -->
 
