@@ -1,0 +1,53 @@
+[2022-10-20T05:51:59.503Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:51:59.508Z][error][production App] Audit Event Emitter - error  can not reach db. metadata: {"stack":"Error: can not reach db\n    at getDb (C:\\Users\\osama\\Desktop\\production express app\\configurations\\database.js:23:11)\n    at Audit.save (C:\\Users\\osama\\Desktop\\production express app\\models\\audit.js:13:5)\n    at EventEmitter.<anonymous> (C:\\Users\\osama\\Desktop\\production express app\\services\\audit.js:12:25)\n    at EventEmitter.emit (node:events:526:28)\n    at audit (C:\\Users\\osama\\Desktop\\production express app\\services\\audit.js:29:11)\n    at Object.<anonymous> (C:\\Users\\osama\\Desktop\\production express app\\server.js:91:1)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)"}
+[2022-10-20T05:53:00.998Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:53:01.001Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:53:18.062Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:53:18.068Z][error][production App] Audit Event Emitter - error  can not reach db. metadata: {"stack":"Error: can not reach db\n    at getDb (C:\\Users\\osama\\Desktop\\production express app\\configurations\\database.js:23:11)\n    at Audit.save (C:\\Users\\osama\\Desktop\\production express app\\models\\audit.js:13:5)\n    at EventEmitter.<anonymous> (C:\\Users\\osama\\Desktop\\production express app\\services\\audit.js:12:25)\n    at EventEmitter.emit (node:events:526:28)\n    at audit (C:\\Users\\osama\\Desktop\\production express app\\services\\audit.js:29:11)\n    at Object.<anonymous> (C:\\Users\\osama\\Desktop\\production express app\\server.js:91:1)\n    at Module._compile (node:internal/modules/cjs/loader:1103:14)\n    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)\n    at Module.load (node:internal/modules/cjs/loader:981:32)\n    at Function.Module._load (node:internal/modules/cjs/loader:822:12)"}
+[2022-10-20T05:53:36.257Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:53:36.259Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:53:41.880Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:53:41.893Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:54:06.793Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:54:06.800Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:54:18.858Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:54:18.862Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:54:25.515Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:54:25.518Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:54:37.795Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:54:37.801Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:54:44.131Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:54:44.134Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:54:46.572Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:54:46.575Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:54:49.595Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:54:49.597Z][error][production App] Audit Event Emitter - error . metadata: {}
+[2022-10-20T05:54:58.557Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:54:58.559Z][error][production App] Audit Event Emitter - error: . metadata: {}
+[2022-10-20T05:55:01.962Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:55:01.966Z][error][production App] Audit Event Emitter - error: . metadata: {}
+[2022-10-20T05:55:04.551Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:55:04.554Z][error][production App] Audit Event Emitter - error: can not reach db. metadata: {}
+[2022-10-20T05:56:15.499Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:56:15.501Z][error][production App] Audit Event Emitter - error: can not reach db. metadata: {}
+[2022-10-20T05:56:33.715Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:56:33.718Z][error][production App] Audit Event Emitter - error: can not reach db. metadata: {}
+[2022-10-20T05:56:47.481Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:56:47.484Z][error][production App] Audit Event Emitter - error: can not reach db. metadata: {}
+[2022-10-20T05:56:58.632Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:57:07.385Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:57:29.627Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:57:32.218Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:57:59.446Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:58:18.437Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:58:24.075Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:58:43.253Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:58:47.464Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T05:58:55.122Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T06:00:11.649Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T06:02:44.312Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T06:02:52.566Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T06:03:03.731Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T06:03:12.898Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T06:04:10.743Z][info][production App] Audit Event Emitter - Audit. metadata: {}
+[2022-10-20T06:08:26.901Z][info][production App] Audit Event Emitter - Audit. metadata: {}

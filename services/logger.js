@@ -37,10 +37,7 @@ class Logger {
   winstonConsoleFormat() {
     return printf(({ timestamp, level, message, metadata }) => {
       const metadataString = metadata != null ? JSON.stringify(metadata) : "";
-
-      return `[${timestamp}][${level}][${this.name}] ${message}. ${
-        "metadata: " + metadataString
-      }`;
+      return `[${timestamp}][${level}][${this.name}] ${message} ${metadataString}`;
     });
   }
 

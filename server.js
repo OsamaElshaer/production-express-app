@@ -17,7 +17,10 @@ const morgan = require("morgan");
 const path = require("path");
 
 //require from module
-const { logger, getLogger } = require("./services/logger");
+const { logger } = require("./services/logger");
+const { dbConnection } = require("./configurations/database");
+const {audit} = require('./services/audit')
+
 // config env & variables
 require("dotenv").config();
 
@@ -76,16 +79,19 @@ app.use(ESAPI.middleware());
 let loggerstream = {
   write: function (message) {
     logger.info(message);
-  }
+  },
 };
 app.use(morgan("tiny", { stream: loggerstream }));
 
 //routes
-app.get("/",(req, res, next) => {
+app.get("/", (req, res, next) => {
   res.end();
 });
 
-// listening on port
-app.listen(port, () => {
-  console.log("server are listen on port 3000");
+
+dbConnection(() => {
+  // listening on port
+  app.listen(port, () => {
+    console.log("server are listen on port 3000");
+  });
 });
