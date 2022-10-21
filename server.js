@@ -19,7 +19,8 @@ const path = require("path");
 //require from module
 const { logger } = require("./services/logger");
 const { dbConnection } = require("./configurations/database");
-const {audit} = require('./services/audit')
+const BaseError = require("./Error/baseError");
+const ApiError = require("./Error/apiError");
 
 // config env & variables
 require("dotenv").config();
@@ -88,7 +89,10 @@ app.get("/", (req, res, next) => {
   res.end();
 });
 
-
+const fun = () => {
+  throw new ApiError("invalid user", 200, "user not found");
+}
+fun()
 dbConnection(() => {
   // listening on port
   app.listen(port, () => {
